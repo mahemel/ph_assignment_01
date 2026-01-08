@@ -1,6 +1,8 @@
 :root {
     --color-green: #30B868;
     --color-dark-green: #469165;
+    --color-lt-black: #001931;
+    --color-subtle-black: #627382;
 }
 * {
     margin: 0;
@@ -21,6 +23,9 @@ ul {
 a {
     text-decoration: none;  
 }
+body {
+    color: var(--color-lt-black);
+}
 
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -32,7 +37,6 @@ a {
 .container {
     max-width: 1360px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 .flex {
     display: flex;
@@ -48,6 +52,9 @@ a {
 }
 .flex-dc {
     flex-direction: column;
+}
+.jc-center {
+    justify-content: center;
 }
 .full-width {
     width: 100%;
@@ -95,6 +102,7 @@ a {
 .white-ghost {
     background: transparent;
     border: 1px solid #fff;
+    transition: 300ms ease;
 }
 .white-ghost.btn:hover {
     border-color: var(--color-dark-green);
@@ -109,28 +117,33 @@ a {
     font-size: 72px;
     line-height: 82px;
     font-weight: 700;
+    text-transform: capitalize;
 }
 .h2 {
     font-size: 48px;
     line-height: 56px;
     font-weight: 700;
+    color: var(--color-lt-black);
+    text-transform: capitalize;
 }
 .p {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 32px;
     font-weight: 400;
 }
 .p.sm {
     font-size: 16px;
     line-height: 20px;
+    color: var(--color-subtle-black);
+}
+.gap-16 {
+    gap: 16px;
 }
 .banner {
     padding: 115px 0 179px;
-    background: #001931 url(../assets/hero-bg.png) center center/cover no-repeat;
+    background: var(--color-lt-black) url(../assets/hero-bg.png) center center/cover no-repeat;
 }
-.banner .container {
-    gap: 16px;
-}
+
 .tocken {
     background: #fff;
     padding: 8px 12px;
@@ -151,12 +164,75 @@ a {
     color: var(--color-green);
 }
 .banner-btn_group {
-    gap: 16px;
     margin-top: 16px;
 }
 .banner-btn_group .btn {
     gap: 10px;
 }
-.banner .p {
-    line-height: 32px;
+
+
+
+.notes-dont-fail {
+    background: #FBFBFB;
+    padding-top: 60px;
+}
+.title-copy_combo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.notes-card_container {
+    gap: 24px;
+}
+.notes-card {
+    background: #fff;
+    padding: 69px 24px 16px;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .06);
+}
+.notes-card_icon {
+    width: 60px;
+    height: 60px;
+    background: #F95555;
+    border-radius: 50%;
+}
+.notes-card_icon img {
+    width: 32px;
+}
+
+.notes-card h3 {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.the-solution {
+    background: #fff;
+    padding: 120px 0;
+    position: relative;
+}
+.col-left,
+.col-right {
+    width: 44.125%;
+}
+.col-right {
+    margin-left: 60px;
+}
+.the-solution .title-copy_combo {
+    align-items: flex-start;
+}
+.the-solution h5 {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: var(--color-green);
+}
+.the-solution ul li:not(:last-child) {
+    margin-bottom: 16px;
+}
+.the-solution ul li {
+    background: url(../assets/CheckCircle.png) left top no-repeat;
+    padding-left: 26px;
 }
