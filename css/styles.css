@@ -1,3 +1,7 @@
+:root {
+    --color-green: #30B868;
+    --color-dark-green: #469165;
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,4 +11,72 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;  
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.flex {
+    display: flex;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-sa {
+    justify-content: space-around;
+}
+.ai-center {
+    align-items: center;
+}
+.full-width {
+    width: 100%;
+}
+
+.navigation {
+    padding: 16px 0;
+}
+.logo {
+    width: 139px;
+    display: block;
+}
+.navigation ul {
+    gap: 32px;
+}
+.navigation ul li a {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    transition: color 300ms ease;
+}
+.navigation ul li a:hover {
+    color: var(--color-green);
+}
+.btn {
+    background: var(--color-green);
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 300ms ease;
+}
+.btn:hover {
+    background: var(--color-dark-green);
 }
