@@ -169,7 +169,8 @@ body {
 .tocken img {
     width: 16px;
 }
-.tocken h5 {
+.tocken h2 {
+    font-size: 16px;
     color: var(--color-green);
     font-weight: 500;
 }
@@ -243,7 +244,8 @@ body {
 .the-solution .title-copy_combo {
     align-items: flex-start;
 }
-.the-solution h5 {
+.the-solution h3 {
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
     color: var(--color-green);
@@ -296,6 +298,7 @@ body {
 .social-links ul li a:hover {
     opacity: .5;
 }
+
 .copyright {
     margin-top: 80px;
     border-top: 1px solid rgba(229, 231, 235, .2);
