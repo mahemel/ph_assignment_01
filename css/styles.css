@@ -34,6 +34,7 @@ body {
   font-style: normal;
 }
 
+/*---- Generic Classes ----*/
 .container {
     max-width: 1360px;
     margin: 0 auto;
@@ -61,25 +62,6 @@ body {
 }
 .text-center {
     text-align: center;
-}
-.navigation {
-    padding: 16px 0;
-}
-.logo {
-    width: 139px;
-    display: block;
-}
-.navigation ul {
-    gap: 32px;
-}
-.navigation ul li a {
-    font-size: 16px;
-    color: #000;
-    font-weight: 500;
-    transition: color 300ms ease;
-}
-.navigation ul li a:hover {
-    color: var(--color-green);
 }
 .btn {
     background: var(--color-green);
@@ -146,6 +128,33 @@ body {
 .gap-16 {
     gap: 16px;
 }
+/*---- Generic Classes ----*/
+
+
+/*---- Navigation ----*/
+.navigation {
+    padding: 16px 0;
+}
+.logo {
+    width: 139px;
+    display: block;
+}
+.navigation ul {
+    gap: 32px;
+}
+.navigation ul li a {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    transition: color 300ms ease;
+}
+.navigation ul li a:hover {
+    color: var(--color-green);
+}
+/*---- Navigation ----*/
+
+
+/*---- Banner ----*/
 .banner {
     padding: 115px 0 179px;
     background: var(--color-lt-black) url(../assets/hero-bg.png) center center/cover no-repeat;
@@ -176,9 +185,10 @@ body {
 .banner-btn_group .btn {
     gap: 10px;
 }
+/*---- Banner ----*/
 
 
-
+/*---- Notes Section ----*/
 .notes-dont-fail {
     background: #FBFBFB;
     padding-top: 60px;
@@ -189,7 +199,6 @@ body {
     align-items: center;
     margin-bottom: 44px;
 }
-
 .notes-card_container {
     gap: 24px;
 }
@@ -215,7 +224,10 @@ body {
     font-weight: 600;
     text-transform: capitalize;
 }
+/*---- Notes Section ----*/
 
+
+/*---- Solution Section ----*/
 .the-solution {
     background: #fff;
     padding: 120px 0;
@@ -243,7 +255,10 @@ body {
     background: url(../assets/CheckCircle.png) left top no-repeat;
     padding-left: 26px;
 }
+/*---- Solution Section ----*/
 
+
+/*---- Get Access Section ----*/
 .get-access {
     padding-bottom: 120px;
 }
@@ -254,20 +269,32 @@ body {
 }
 .get-access .p.sm {
     margin-bottom: 10px;
+    line-height: 24px;
 }
+.get-access .btn {
+    gap: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .15);
+}
+/*---- Get Access Section ----*/
 
 
-
+/*---- Footer Section ----*/
 .footer {
     padding: 120px 20px 30px;
     background: var(--color-lt-black);
 }
-.footer h2 {
+.social-links h2 {
     margin-bottom: 16px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1em;
     color: #fff;
+}
+.social-links ul li a {
+    transition: opacity 300ms ease;
+}
+.social-links ul li a:hover {
+    opacity: .5;
 }
 .copyright {
     margin-top: 80px;
@@ -279,3 +306,4 @@ body {
     font-size: 16px;
     line-height: 1em;
 }
+/*---- Footer Section ----*/
