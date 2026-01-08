@@ -126,6 +126,13 @@ body {
     color: var(--color-lt-black);
     text-transform: capitalize;
 }
+.h3 {
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 600;
+    color: var(--color-lt-black);
+    text-transform: capitalize;
+}
 .p {
     font-size: 18px;
     line-height: 32px;
@@ -226,7 +233,7 @@ body {
 }
 .the-solution h5 {
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: 500;
     color: var(--color-green);
 }
 .the-solution ul li:not(:last-child) {
@@ -235,4 +242,40 @@ body {
 .the-solution ul li {
     background: url(../assets/CheckCircle.png) left top no-repeat;
     padding-left: 26px;
+}
+
+.get-access {
+    padding-bottom: 120px;
+}
+.get-access .container {
+    padding: 80px 0;
+    background: #F7F6F2;
+    border-radius: 12px;
+}
+.get-access .p.sm {
+    margin-bottom: 10px;
+}
+
+
+
+.footer {
+    padding: 120px 20px 30px;
+    background: var(--color-lt-black);
+}
+.footer h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1em;
+    color: #fff;
+}
+.copyright {
+    margin-top: 80px;
+    border-top: 1px solid rgba(229, 231, 235, .2);
+    padding-top: 16px;
+}
+.copyright p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1em;
 }
